@@ -223,20 +223,32 @@ img {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
+.close-icon {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-opacity: 0.1;
+}
 
 .button-close-modal {
   display: block;
   cursor: pointer;
   margin-left: auto;
+  width: 30px;
+  height: 30px;
   border: none;
   padding: 0px;
   margin-right: 8px;
   margin-top: 8px;
   background-color: transparent;
+
+  translate: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-icon {
-  width: 30px;
-  height: 30px;
+
+.button-close-modal:hover,
+.button-close-modal:focus {
+  color: var(--accent-color);
 }
 /* ---------------------------------------SECTIONS--------------------------------- */
 .section {
